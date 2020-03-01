@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+ {{perNom[0]}}
+
+ <table>
+{% for cle, valeur in perNom %}
+<tr><td>{{cle }}-{{valeur| capitalize}}</td></tr>
+{% endfor %}
+<table>
+
+{% endblock %}
